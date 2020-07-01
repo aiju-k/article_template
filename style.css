@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  font-family: europa, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", "Hiragino Sans", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, メイリオ, Meiryo, sans-serif;
+  color: #111;
+}
+
+header p, main, footer section {
+  margin: 0 30px;
+}
+
+section.main {
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #1b94b2;
+}
+
+a:hover {
+  opacity: .8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+header > p {
+  opacity: .8;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* 各タイトル */
+
+.main-ttl {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+}
+
+.main-ttl::before {
+  content: "";
+  width: 25%;
+  border-bottom: 4px solid #111;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: -2px;
+}
+
+/* 書籍概要 */
+.book-info {
+  background: #efefef;
+  padding: 20px;
+}
+
+.book-info > h4 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.book-info li {
+  padding: 3px 0;
+  font-size: 14px;
+}
+
+.main2 h3 {
+  margin: 25px 0 20px;
+}
+
+/* 書籍を詳しくボタン */
+div.btn {
+  background: #1b94b2;
+  line-height: 4.5;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 40px;
+  position: relative;
+  margin: 30px 0;
+}
+
+div.btn:hover {
+  opacity: .8;
+}
+
+div.btn::after {
+  content: url("img/next.png");
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+  line-height: 4.5;
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: -5px;
+  margin-right: 10px;
+}
+
+/* ロゴスクロール */
+.slick-slide {
+  outline: none;
+}
+
+.logo div.logo-img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.logo div.logo-img:active {
+  border: 3px solid #111;
+}
+
+/* 概要 */
+footer {
+  font-size: 14px;
+}
+
+.about {
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+}
+
+.about > img {
+  width: 75%;
+  margin: 20px 12.5%;
+}
+
+ul.com-info {
+  text-align: center;
+}
+
+.com-info li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.about ul a {
+  color: #555;
+}
+
+/* snsロゴ */
+
+ul.sns {
+  text-align: center;
+}
+
+.sns li {
+  display: inline-block;
+  width: 7%;
+  margin: 10px 20px 30px;
+}
+
+/* 著作権表記 */
+
+.copyright {
+  background: #ececec;
+  text-align: right;
+  line-height: 10;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+  
+  main, footer section{
+    width: 840px;
+    margin: 30px auto 0;
+  }
+  
+}
